@@ -1,7 +1,144 @@
+:root {
+  --main-bg-color:#0d4073ff;
+  --text-primary:#11d5ecff;
+  --text-secondary:#0d4073ff;
+  --text-white:rgb(255, 255, 255);
+}
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", sans-serif;
-    height: 100%;
-    width: 100%;
-  }
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  color: var(--text-primary);
+}
+
+
+#app {
+  background-color: var(--main-bg-color);
+  background-image: url("./assets/bg-triangles.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+#app::before {
+  background-image: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+  content:"";
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 180px;
+  z-index: 1;
+}
+
+#app  h1, #app ul >li, #app div{
+  color:var(--text-white);
+}
+
+#app div {
+  width: 45%;
+}
+
+#app ul {
+  width: 35%;
+}
+
+#app ul >li::marker {
+  color: var(--text-primary);
+}
+
+
+
+#app h2:nth-of-type(3) {
+  align-items: end;
+  color: var(--text-secondary);
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  position: absolute;
+  right: 18%;
+  top:23%;
+  z-index: 1;
+}
+#app div:nth-of-type(2) {
+  align-items: end;
+  background-color: #79a6d2ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--text-white);
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  padding: 2%;
+  position: absolute;
+  right: 5%;
+  top:20%;
+  width: 30%;
+  letter-spacing: 2px;
+}
+
+
+
+#app h2:nth-of-type(4) {
+  position: absolute;
+  color: var(--text-secondary);
+  right: 23%;
+  top:45%;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+#app div:nth-of-type(3) {
+  background-color: #a5d321ff;
+  position: absolute;
+  color: var(--text-white);
+  right: 22%;
+  top:38%;
+  width: 15%;
+  height: 130px;
+  display: flex;
+  align-items: end;
+  padding: 1%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+
+#app h2:nth-of-type(5) {
+  position: absolute;
+  color: var(--text-secondary);
+  right: 8%;
+  top:45%;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+#app div:nth-of-type(4) {
+  background-color: #c52d96ff;
+  position: absolute;
+  color: var(--text-white);
+  right: 5%;
+  top:38%;
+  width: 15%;
+  height: 130px;
+  display: flex;
+  align-items: end;
+  padding: 1%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
